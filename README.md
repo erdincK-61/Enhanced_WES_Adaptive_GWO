@@ -9,7 +9,7 @@ Back-casting Initialization: Reverses the time series to accurately stabilize th
 
 Grey Wolf Optimization (GWO): Implements an automated 5D parameter tuning mechanism (optimizing alpha, beta, gamma, SETS threshold, and damping factor phi) using the Grey Wolf Optimizer.
 
-Sequential Error Tracking Signal (SETS): An adaptive monitoring system that detects forecast bias in real-time and triggers automatic model re-tuning with a damped bias correction.
+Smoothed Error Tracking Signal (SETS): An adaptive monitoring system that detects forecast bias in real-time and triggers automatic model re-tuning with a damped bias correction.
 
 Project Structure
 
