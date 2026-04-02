@@ -83,8 +83,11 @@ MAPE (Mean Absolute Percentage Error)
 sMAPE (Symmetric Mean Absolute Percentage Error)
 
 License
+
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 Author
+
 Erdinc K.
+
 Karadeniz Technical University
