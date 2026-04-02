@@ -31,7 +31,7 @@ Source: German Weather Service (DWD) - Climate Data Center (CDC).
 
 Version/Date Range: Data includes records up to 2024.
 
-Date Accessed: April 1, 2026.
+Date Accessed: February 20, 2025.
 
 License: GeoNutzV (Data is free for use under the terms of the Ordinance on the Use of Data from the German Weather Service).
 
@@ -45,7 +45,7 @@ Source: Originally maintained by Rob J. Hyndman via the 'tsdl' R package.
 
 Version: 0.1.0 (R package version).
 
-Date Accessed: March 20, 2026.
+Date Accessed: February 20, 2025.
 
 License: CC BY-SA 4.0.
 
@@ -61,7 +61,7 @@ DOI: 10.1016/j.ijforecast.2018.06.001
 
 Version: Access via 'datasetsforecast' Python library (v0.0.8).
 
-Date Accessed: March 18, 2026.
+Date Accessed: March 6, 2026.
 
 License: MIT License (Provided by Nixtla via datasetsforecast).
 
