@@ -152,15 +152,24 @@ def gwo(objf, agents=10, iters=20):
     return alpha_pos
 
 def get_ranked_results_strings(results_list):
+    """Formats detailed table with SMAPE and local rank for each series."""
     df = pd.DataFrame(results_list)
     cols = ["Proposed", "Static", "ARIMA", "ETS", "SNaive"]
+    
     display_df = df.copy()
+    for col in cols:
+        display_df[col] = display_df[col].astype(object)
+    
     for i, row in df.iterrows():
-        vals = np.array([results_list[i][c] for c in cols]).astype(float)
-        vals = np.nan_to_num(vals, nan=999999)
+        vals = np.array([row[c] for c in cols]).astype(float)
+        vals = np.nan_to_num(vals, nan=999999.0)
+        
         ranks = pd.Series(vals).rank(method='min').values.astype(int)
+        
         for idx, col in enumerate(cols):
+
             display_df.at[i, col] = f"{vals[idx]:.4f} ({ranks[idx]})"
+            
     return display_df
 
 # ======================================================
